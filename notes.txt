@@ -1,0 +1,6 @@
+function=
+TIME_SERIES_DAILY : Returns Historical data about ticker daily metrics
+NEWS_SENTIMENT : Returns articles about the selected ticker
+TOP_GAINERS_LOSERS : Returns top 20 gainers and losers
+
+
