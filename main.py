@@ -35,14 +35,11 @@ def combine():
     return(url)
 
 #url = 'https://www.alphavantage.co/query?function=' + 'NEWS_SENTIMENT&topics=financial_markets&symbol=TSLA&apikey=PFIAONBRZUFUKQI3'
+
 r = requests.get(combine())
 data = r.json()
-
-# with open('results.json', 'w') as convert_file: 
-#      convert_file.write(json.dumps(data))
-raw = json.loads(json.dumps(data))
-formatted = json.dumps(raw, indent=4)
+raw = json.dumps(data, indent=4)
 f = open("results.json", 'w')
-f.write(formatted)
+f.write(raw)
 f.close()
-print(formatted)
+print(raw)
